@@ -55,6 +55,102 @@
       background: #94a3b8;
     }
   </style>
+  <style>
+  html {
+    scroll-padding-top: 110px;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  p,
+  li {
+    line-height: 1.7;
+  }
+
+  button,
+  a {
+    min-height: 44px;
+  }
+
+  button:focus-visible,
+  a:focus-visible {
+    outline: 3px solid #10b981;
+    outline-offset: 3px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    overflow-wrap: anywhere;
+  }
+
+  h2.sm\:whitespace-nowrap {
+    white-space: normal !important;
+  }
+
+  .text-slate-500 {
+    color: #475569 !important;
+  }
+
+  .text-slate-600 {
+    color: #334155 !important;
+  }
+
+  .course-card:hover {
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 640px) {
+    header nav {
+      overflow-x: auto;
+    }
+
+    header nav button {
+      flex: 1 0 auto;
+      min-width: 145px;
+      white-space: normal;
+      line-height: 1.35;
+    }
+
+    header .order-2 {
+      width: 100%;
+      justify-content: stretch;
+    }
+
+    header .order-2 a {
+      flex: 1;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .fixed.bottom-5.left-5 {
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      justify-content: center;
+      border-radius: 14px;
+    }
+
+    .fixed.bottom-5.left-5 span:last-child {
+      display: inline !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+      scroll-behavior: auto !important;
+    }
+  }
+</style>
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased selection:bg-emerald-100 selection:text-emerald-900">
 
